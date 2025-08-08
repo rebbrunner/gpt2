@@ -1,0 +1,12 @@
+PRE-REQ KNOWLEDGE:
+- Virtual python activation
+- Installing pip packages through a requirements file
+- Kubernetes cluster
+- A compatible node with an NVIDIA gpu labeled gpu=1
+
+INSTALLATION INSTRUCTIONS
+1. Pull image and load into containerd
+2. Clone the repo, keep name as data-sci-env
+3. Activate .env and install python requirements
+4. Update notebook password in command.sh
+5. Install with helm install dev-lab --hostPath=/local/path/to/repo

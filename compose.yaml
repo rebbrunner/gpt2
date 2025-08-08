@@ -1,0 +1,11 @@
+services:
+  devlab:
+    image: 127.0.0.1:5000/dev:lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - C:\users\rebs\documents\dev:/home/rebs/dev
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=ALL
+    tty: true
+    runtime: nvidia
